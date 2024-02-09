@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1068348343924",
+    "project_id": "disney-53d67",
+    "storage_bucket": "disney-53d67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068348343924:android:c443c17afb664d592bb321",
+        "android_client_info": {
+          "package_name": "com.example.diney"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl5OH00yUrP8uGI6peHfXqvTuOUhRVbLg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

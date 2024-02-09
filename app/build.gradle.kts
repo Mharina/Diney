@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.diney"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.diney"
@@ -15,6 +15,9 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildFeatures{
+        viewBinding = true
     }
 
     buildTypes {
@@ -47,5 +50,10 @@ dependencies {
     //opcional circulo indicador
     implementation("me.relex:circleindicator:2.1.6")
     //carrusel
-    implementation("org.imaginativeworld.whynotimagecarousel:whynotimagecarousel:1.2.1")
+    implementation ("org.imaginativeworld.whynotimagecarousel:whynotimagecarousel:2.1.0")
+    //firebase
+    implementation(platform("com.google.firebase:firebase-bom:32.7.1"))
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-auth-ktx")
+
 }
