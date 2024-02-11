@@ -15,7 +15,7 @@ class MenuPrincipal : AppCompatActivity() {
 
     private val list = mutableListOf<CarouselItem>()
 
-    private lateinit var binding: ActivityKotlinBinding
+    //private lateinit var binding: ActivityKotlinBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,83 +26,83 @@ class MenuPrincipal : AppCompatActivity() {
         list.add(CarouselItem("https://www.mundodeportivo.com/alfabeta/hero/2023/11/0x0.png?width=768&aspect_ratio=16:9&format=nowebp", "Marvel"))
         list.add(CarouselItem("https://lumiere-a.akamaihd.net/v1/images/introducing-dplus-social_10646ca8.jpeg", "inicio"))
 
-        binding.carousel3.registerLifecycle(lifecycle)
-
-        // Custom view
-        binding.carousel3.carouselListener = object : CarouselListener {
-            override fun onCreateViewHolder(
-                layoutInflater: LayoutInflater,
-                parent: ViewGroup
-            ): ViewBinding {
-                return ItemCustomFixedSizeLayout1Binding.inflate(layoutInflater, parent, false)
-            }
-
-            override fun onBindViewHolder(
-                binding: ViewBinding,
-                item: org.imaginativeworld.whynotimagecarousel.model.CarouselItem,
-                position: Int
-            ) {
-                val currentBinding = binding as ItemCustomFixedSizeLayout1Binding
-
-                currentBinding.imageView.apply {
-                    scaleType = ImageView.ScaleType.CENTER_CROP
-
-                    // carousel_default_placeholder is the default placeholder comes with
-                    // the library.
-                    setImage(item, R.drawable.carousel_default_placeholder)
-                }
-            }
-        }
-
-        val listThree = mutableListOf<org.imaginativeworld.whynotimagecarousel.model.CarouselItem>()
-
-        for (item in DataSet.three) {
-            listThree.add(
-                org.imaginativeworld.whynotimagecarousel.model.CarouselItem(
-                    imageUrl = item.first,
-                    caption = item.second
-                )
-            )
-        }
-
-        binding.carousel3.setData(listThree)
-
-        binding.customCaption.isSelected = true
-
-        binding.carousel3.onScrollListener = object : CarouselOnScrollListener {
-
-            override fun onScrollStateChanged(
-                recyclerView: RecyclerView,
-                newState: Int,
-                position: Int,
-                carouselItem: org.imaginativeworld.whynotimagecarousel.model.CarouselItem?
-            ) {
-                if (newState == RecyclerView.SCROLL_STATE_IDLE) {
-                    carouselItem?.apply {
-                        binding.customCaption.text = caption
-                    }
-                }
-            }
-
-            override fun onScrolled(
-                recyclerView: RecyclerView,
-                dx: Int,
-                dy: Int,
-                position: Int,
-                carouselItem: org.imaginativeworld.whynotimagecarousel.model.CarouselItem?
-            ) {
-                // ...
-            }
-        }
-
-        // Custom navigation
-        binding.btnGotoPrevious.setOnClickListener {
-            binding.carousel3.previous()
-        }
-
-        binding.btnGotoNext.setOnClickListener {
-            binding.carousel3.next()
-        }
+//        binding.carousel3.registerLifecycle(lifecycle)
+//
+//        // Custom view
+//        binding.carousel3.carouselListener = object : CarouselListener {
+//            override fun onCreateViewHolder(
+//                layoutInflater: LayoutInflater,
+//                parent: ViewGroup
+//            ): ViewBinding {
+//                return ItemCustomFixedSizeLayout1Binding.inflate(layoutInflater, parent, false)
+//            }
+//
+//            override fun onBindViewHolder(
+//                binding: ViewBinding,
+//                item: org.imaginativeworld.whynotimagecarousel.model.CarouselItem,
+//                position: Int
+//            ) {
+//                val currentBinding = binding as ItemCustomFixedSizeLayout1Binding
+//
+//                currentBinding.imageView.apply {
+//                    scaleType = ImageView.ScaleType.CENTER_CROP
+//
+//                    // carousel_default_placeholder is the default placeholder comes with
+//                    // the library.
+//                    setImage(item, R.drawable.carousel_default_placeholder)
+//                }
+//            }
+//        }
+//
+//        val listThree = mutableListOf<org.imaginativeworld.whynotimagecarousel.model.CarouselItem>()
+//
+//        for (item in DataSet.three) {
+//            listThree.add(
+//                org.imaginativeworld.whynotimagecarousel.model.CarouselItem(
+//                    imageUrl = item.first,
+//                    caption = item.second
+//                )
+//            )
+//        }
+//
+//        binding.carousel3.setData(listThree)
+//
+//        binding.customCaption.isSelected = true
+//
+//        binding.carousel3.onScrollListener = object : CarouselOnScrollListener {
+//
+//            override fun onScrollStateChanged(
+//                recyclerView: RecyclerView,
+//                newState: Int,
+//                position: Int,
+//                carouselItem: org.imaginativeworld.whynotimagecarousel.model.CarouselItem?
+//            ) {
+//                if (newState == RecyclerView.SCROLL_STATE_IDLE) {
+//                    carouselItem?.apply {
+//                        binding.customCaption.text = caption
+//                    }
+//                }
+//            }
+//
+//            override fun onScrolled(
+//                recyclerView: RecyclerView,
+//                dx: Int,
+//                dy: Int,
+//                position: Int,
+//                carouselItem: org.imaginativeworld.whynotimagecarousel.model.CarouselItem?
+//            ) {
+//                // ...
+//            }
+//        }
+//
+//        // Custom navigation
+//        binding.btnGotoPrevious.setOnClickListener {
+//            binding.carousel3.previous()
+//        }
+//
+//        binding.btnGotoNext.setOnClickListener {
+//            binding.carousel3.next()
+//        }
 
 //        carousel.carouselListener = object : CarouselListener {
 //            override fun onCreateViewHolder(
