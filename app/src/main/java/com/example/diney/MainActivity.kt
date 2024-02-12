@@ -21,29 +21,29 @@ class MainActivity : AppCompatActivity() {
         val auth: FirebaseAuth = Firebase.auth
 
         botonI.setOnClickListener{
-            if (user.text.isNotEmpty() && pass.text.isNotEmpty()){
-                auth.createUserWithEmailAndPassword(user.text.toString(), pass.text.toString()).addOnCompleteListener(this) { task ->
-                    if (task.isSuccessful) {
-                        val intent = Intent(this@MainActivity, MenuPrincipal::class.java)
-                        startActivity(intent)
-
-                    } else {
-                        val builder = AlertDialog.Builder(this)
-                        builder.setTitle("Error")
-                        builder.setMessage("Se ha producido un error en la autenticacion del ususario")
-                        builder.setPositiveButton("Aceptar",null)
-                        val dialog: AlertDialog = builder.create()
-                        dialog.show()
-                    }
-                }
-            }else{
-                val builder = AlertDialog.Builder(this)
-                builder.setTitle("Error")
-                builder.setMessage("No puede dejar los campos en blanco")
-                builder.setPositiveButton("Aceptar",null)
-                val dialog: AlertDialog = builder.create()
-                dialog.show()
-            }
+//            if (user.text.isNotEmpty() && pass.text.isNotEmpty()){
+//                auth.createUserWithEmailAndPassword(user.text.toString(), pass.text.toString()).addOnCompleteListener(this) { task ->
+//                    if (task.isSuccessful) {
+//                        val intent = Intent(this@MainActivity, MenuPrincipal::class.java)
+//                        startActivity(intent)
+//
+//                    } else {
+//                        val builder = AlertDialog.Builder(this)
+//                        builder.setTitle("Error")
+//                        builder.setMessage("Se ha producido un error en la autenticacion del ususario")
+//                        builder.setPositiveButton("Aceptar",null)
+//                        val dialog: AlertDialog = builder.create()
+//                        dialog.show()
+//                    }
+//                }
+//            }else{
+//                val builder = AlertDialog.Builder(this)
+//                builder.setTitle("Error")
+//                builder.setMessage("No puede dejar los campos en blanco")
+//                builder.setPositiveButton("Aceptar",null)
+//                val dialog: AlertDialog = builder.create()
+//                dialog.show()
+//            }
             val intent = Intent(this@MainActivity, MenuPrincipal::class.java)
             startActivity(intent)
         }

@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     android:background="#191b28"
     android:orientation="vertical"
-    tools:context=".FiltroDisney">
+    tools:context=".FiltroStars">
 
     <ImageButton
         android:id="@+id/imageButton10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@android:drawable/btn_star" />
+        android:src="?attr/homeAsUpIndicator" />
 
     <ScrollView
         android:layout_width="match_parent"
