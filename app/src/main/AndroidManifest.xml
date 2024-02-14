@@ -15,6 +15,57 @@
         android:theme="@style/Theme.Diney"
         tools:targetApi="31">
         <activity
+            android:name=".SoloAsesinatos"
+            android:exported="false" />
+        <activity
+            android:name=".Kingsman"
+            android:exported="false" />
+        <activity
+            android:name=".Pompeya"
+            android:exported="false" />
+        <activity
+            android:name=".PercyJackson"
+            android:exported="false" />
+        <activity
+            android:name=".Mandalorian"
+            android:exported="false" />
+        <activity
+            android:name=".Baymax"
+            android:exported="false" />
+        <activity
+            android:name=".NuevaEsperanza"
+            android:exported="false" />
+        <activity
+            android:name=".UltimaEsperanza"
+            android:exported="false" />
+        <activity
+            android:name=".Shield"
+            android:exported="false" />
+        <activity
+            android:name=".Up"
+            android:exported="false" />
+        <activity
+            android:name=".LosIncreibles"
+            android:exported="false" />
+        <activity
+            android:name=".ImperioContrataca"
+            android:exported="false" />
+        <activity
+            android:name=".Cruella"
+            android:exported="false" />
+        <activity
+            android:name=".HocusPocus"
+            android:exported="false" />
+        <activity
+            android:name=".Cars"
+            android:exported="false" />
+        <activity
+            android:name=".TheCreator"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorStrange"
+            android:exported="false" />
+        <activity
             android:name=".FiltroStars"
             android:exported="false" />
         <activity

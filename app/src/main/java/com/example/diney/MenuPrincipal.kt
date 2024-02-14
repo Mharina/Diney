@@ -1,10 +1,9 @@
 package com.example.diney
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.AdapterView
 import android.widget.ImageButton
 import androidx.cardview.widget.CardView
 import org.imaginativeworld.whynotimagecarousel.ImageCarousel
@@ -17,19 +16,20 @@ class MenuPrincipal : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_principal)
+        //Carrusel
+        val carousel: ImageCarousel = findViewById(R.id.carrusel)
         //Menu
         val casa: ImageButton = findViewById(R.id.imageButton)
         val buscar: ImageButton = findViewById(R.id.imageButton2)
         val descargas: ImageButton = findViewById(R.id.imageButton3)
         val perfil: ImageButton = findViewById(R.id.imageButton4)
         //Filtros
-        val disney: CardView = findViewById(R.id.Disney)
+        val disneyF: CardView = findViewById(R.id.apartadod)
         val pixar: CardView = findViewById(R.id.Pixar)
         val marvel: CardView = findViewById(R.id.Marvel)
         val national: CardView = findViewById(R.id.National)
         val star_wars: CardView = findViewById(R.id.StarWars)
         val stars: CardView = findViewById(R.id.Stars)
-        val carousel: ImageCarousel = findViewById(R.id.carrusel)
         //Peliculas/Series
         val strange: CardView = findViewById(R.id.strange)
         val creator: CardView = findViewById(R.id.creator)
@@ -52,7 +52,7 @@ class MenuPrincipal : AppCompatActivity() {
         list.add(CarouselItem("https://lumiere-a.akamaihd.net/v1/images/introducing-dplus-social_10646ca8.jpeg", "inicio"))
 
 
-        disney.setOnClickListener{
+        disneyF.setOnClickListener{
             val intent = Intent(this@MenuPrincipal, FiltroDisney::class.java)
             startActivity(intent)
         }
@@ -77,55 +77,72 @@ class MenuPrincipal : AppCompatActivity() {
             startActivity(intent)
         }
         strange.setOnClickListener{
-
+            val intent = Intent(this@MenuPrincipal, DoctorStrange::class.java)
+            startActivity(intent)
         }
         creator.setOnClickListener{
-
+            val intent = Intent(this@MenuPrincipal, TheCreator::class.java)
+            startActivity(intent)
         }
         cars.setOnClickListener{
-
+            val intent = Intent(this@MenuPrincipal, Cars::class.java)
+            startActivity(intent)
         }
         hocus.setOnClickListener{
-
+            val intent = Intent(this@MenuPrincipal, HocusPocus::class.java)
+            startActivity(intent)
         }
         cruella.setOnClickListener{
-
+            val intent = Intent(this@MenuPrincipal, Cruella::class.java)
+            startActivity(intent)
         }
         imperio.setOnClickListener{
-
+            val intent = Intent(this@MenuPrincipal, ImperioContrataca::class.java)
+            startActivity(intent)
         }
         increibles.setOnClickListener{
-
+            val intent = Intent(this@MenuPrincipal, LosIncreibles::class.java)
+            startActivity(intent)
         }
         up.setOnClickListener{
-
+            val intent = Intent(this@MenuPrincipal, Up::class.java)
+            startActivity(intent)
         }
         shield.setOnClickListener{
-
+            val intent = Intent(this@MenuPrincipal, Shield::class.java)
+            startActivity(intent)
         }
         esperanza.setOnClickListener{
-
+            val intent = Intent(this@MenuPrincipal, NuevaEsperanza::class.java)
+            startActivity(intent)
         }
         baymax.setOnClickListener{
-
+            val intent = Intent(this@MenuPrincipal, Baymax::class.java)
+            startActivity(intent)
         }
         mandalorian.setOnClickListener{
-
+            val intent = Intent(this@MenuPrincipal, Mandalorian::class.java)
+            startActivity(intent)
         }
         percy.setOnClickListener{
-
+            val intent = Intent(this@MenuPrincipal, PercyJackson::class.java)
+            startActivity(intent)
         }
         pompeya.setOnClickListener{
-
+            val intent = Intent(this@MenuPrincipal, Pompeya::class.java)
+            startActivity(intent)
         }
         kingsman.setOnClickListener{
-
+            val intent = Intent(this@MenuPrincipal, Kingsman::class.java)
+            startActivity(intent)
         }
         asesino.setOnClickListener{
-
+            val intent = Intent(this@MenuPrincipal, SoloAsesinatos::class.java)
+            startActivity(intent)
         }
         casa.setOnClickListener{
-
+            val intent = Intent(this@MenuPrincipal, FiltroStars::class.java)
+            startActivity(intent)
         }
         buscar.setOnClickListener{
             val intent = Intent(this@MenuPrincipal, Buscador::class.java)
