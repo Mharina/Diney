@@ -51,13 +51,14 @@
                     android:orientation="horizontal">
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/mandalorian_W"
                         android:layout_width="100dp"
                         android:layout_height="150dp"
                         android:layout_marginStart="20dp"
                         android:orientation="vertical"
                         app:cardBackgroundColor="@color/white"
                         app:cardCornerRadius="8dp"
-                        app:cardElevation="4dp" >
+                        app:cardElevation="4dp">
 
                         <ImageView
                             android:id="@+id/imageView32"
@@ -68,13 +69,14 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/imperio_SW"
                         android:layout_width="100dp"
                         android:layout_height="150dp"
                         android:layout_marginStart="20dp"
                         android:orientation="vertical"
                         app:cardBackgroundColor="@color/white"
                         app:cardCornerRadius="8dp"
-                        app:cardElevation="4dp" >
+                        app:cardElevation="4dp">
 
                         <ImageView
                             android:id="@+id/imageView28"
@@ -85,13 +87,14 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/esperanza_SW"
                         android:layout_width="100dp"
                         android:layout_height="150dp"
                         android:layout_marginStart="20dp"
                         android:orientation="vertical"
                         app:cardBackgroundColor="@color/white"
                         app:cardCornerRadius="8dp"
-                        app:cardElevation="4dp" >
+                        app:cardElevation="4dp">
 
                         <ImageView
                             android:id="@+id/imageView33"

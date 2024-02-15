@@ -1,6 +1,5 @@
 package com.example.diney
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -53,7 +52,7 @@ class MenuPrincipal : AppCompatActivity() {
 
 
         disneyF.setOnClickListener{
-            val intent = Intent(this@MenuPrincipal, FiltroDisney::class.java)
+            val intent = Intent(this@MenuPrincipal, FiltroWal::class.java)
             startActivity(intent)
         }
         pixar.setOnClickListener{

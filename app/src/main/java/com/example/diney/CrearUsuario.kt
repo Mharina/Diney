@@ -73,8 +73,8 @@ class CrearUsuario : AppCompatActivity() {
         }
         botonS.setOnClickListener{
             if (email.text.isNotEmpty() && password.text.isNotEmpty() && usuario.text.isNotEmpty()){
-                auth.createUserWithEmailAndPassword(email.text.toString(), password.text.toString()).addOnCompleteListener(this) { task ->
-                    if (task.isSuccessful) {
+                auth.createUserWithEmailAndPassword(email.text.toString(), password.text.toString()).addOnCompleteListener {
+                    if (it.isSuccessful) {
                         val intent = Intent(this@CrearUsuario, MenuPrincipal::class.java)
                         startActivity(intent)
                     } else {

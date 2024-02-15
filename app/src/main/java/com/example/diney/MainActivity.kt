@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         botonI.setOnClickListener{
             if (user.text.isNotEmpty() && pass.text.isNotEmpty()){
-                auth.createUserWithEmailAndPassword(user.text.toString(), pass.text.toString()).addOnCompleteListener(this) { task ->
+                auth.signInWithEmailAndPassword(user.text.toString(), pass.text.toString()).addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         val intent = Intent(this@MainActivity, MenuPrincipal::class.java)
                         startActivity(intent)

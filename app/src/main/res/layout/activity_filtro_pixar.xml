@@ -68,7 +68,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/increibles"
+                        android:id="@+id/increibles_D"
                         android:layout_width="100dp"
                         android:layout_height="150dp"
                         android:layout_marginStart="20dp"
@@ -86,7 +86,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/up"
+                        android:id="@+id/up_D"
                         android:layout_width="100dp"
                         android:layout_height="150dp"
                         android:layout_marginStart="20dp"
