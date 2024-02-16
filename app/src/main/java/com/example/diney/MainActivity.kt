@@ -19,12 +19,20 @@ class MainActivity : AppCompatActivity() {
         val user:EditText = findViewById(R.id.usuario)
         val pass:EditText = findViewById(R.id.password)
         val auth: FirebaseAuth = Firebase.auth
+        val usuario = intent.getStringExtra("usuario")
+        val passw = intent.getStringExtra("password")
+        val mail = intent.getStringExtra("email")
+        val foto = intent.getStringExtra("imagen_id")
 
         botonI.setOnClickListener{
             if (user.text.isNotEmpty() && pass.text.isNotEmpty()){
                 auth.signInWithEmailAndPassword(user.text.toString(), pass.text.toString()).addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
-                        val intent = Intent(this@MainActivity, MenuPrincipal::class.java)
+                        val intent = Intent(this@MainActivity, Buscador::class.java)
+                        intent.putExtra("imagen_id", foto)
+                        intent.putExtra("email", mail)
+                        intent.putExtra("usuario", usuario)
+                        intent.putExtra("contraseña", passw)
                         startActivity(intent)
 
                     } else {

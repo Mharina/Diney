@@ -20,6 +20,13 @@
         android:layout_margin="20dp"
         android:orientation="vertical">
 
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:src="@drawable/ic_launcher_background" />
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
@@ -95,7 +102,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="*Al hacer clic en Aceptar y suscribirse, aceptas nuestros acuerdos de suscripcion y te registrarás para realizar pagos automáticos por el Paquete Disney (más impuestos cuando corresponda) hasta que cancela la suscripción. Puedes cancelar el servicio en cualquier momento y la cancelación entrará en vigor cuando termine el período de facturación. No se ofrecen reembolsos ni créditos por meses o años parciales."
+            android:text="*Al hacer clic en Aceptar y suscribirse, aceptas nuestros acuerdos de suscripcion y te registrarás para realizar pagos automáticos por el Paquete Disney (más impuestos cuando corresponda) hasta que cancela la suscripción. Puedes cancelar el servicio en cualquier momento y la cancelación entrará en vigor cuando termine el período de facturación."
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
             android:textColor="#D3D3D3" />
 
