@@ -1,9 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1a1c29"
+    android:orientation="vertical"
     tools:context=".ImperioContrataca">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/scalei" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/star_wars_el_imperio_contraataca_estos_eran_los_disenos_originales_para_el_logo_de_la_pelicula_original_transformed" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:text="PLAY"
+        android:textColor="@color/black"
+        app:cornerRadius="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Hace mucho tiempo en una galaxia muy, muy lejana.  Es una época oscura para la Rebelión. Aunque la Estrella de la Muerte ha sido destruida, las tropas imperiales han obligado a las fuerzas rebeldes a dejar sus bases secretas y las han perseguido a través de la galaxia. En una fuga de la temida Flota Imperial, un grupo de guerreros rebeldes liderado por Luke Skywalker ha establecido una nueva base secreta en la remota tierra congelada de Hoth. Darth Vader, Señor del mal, obsesionado con encontrar al joven Skywalker, ha despachado al lejano espacio miles de sondas a control remoto..."
+        android:textColor="@color/white" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="67dp"
+        android:background="#191b28">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton18"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="#191b28"
+                android:scaleType="centerInside"
+                android:src="@drawable/house_home_building_icon_148241" />
+
+            <ImageButton
+                android:id="@+id/imageButton19"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="50dp"
+                android:layout_weight="1"
+                android:background="#191b28"
+                android:scaleType="centerInside"
+                android:src="@drawable/lupa_1_" />
+        </LinearLayout>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</LinearLayout>

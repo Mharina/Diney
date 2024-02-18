@@ -8,14 +8,6 @@
     android:orientation="vertical"
     tools:context=".Buscador">
 
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name" />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="576dp"
@@ -41,6 +33,7 @@
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/pelis"
                     android:layout_width="150dp"
                     android:layout_height="140dp"
                     android:layout_marginRight="70dp"
@@ -52,7 +45,6 @@
                         android:layout_height="50dp"
                         android:layout_gravity="center_horizontal|center_vertical"
                         android:scaleType="centerInside"
-                        android:src="@tools:sample/avatars"
                         app:srcCompat="@drawable/pelicula" />
 
                     <TextView
@@ -66,6 +58,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/serie"
                     android:layout_width="150dp"
                     android:layout_height="match_parent"
                     app:cardBackgroundColor="#2a2c38">
@@ -75,7 +68,6 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_gravity="center_horizontal|center_vertical"
-                        android:src="@tools:sample/avatars"
                         app:srcCompat="@drawable/television" />
 
                     <TextView
@@ -97,6 +89,7 @@
                 android:visibility="visible">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/ckin"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp">
@@ -105,10 +98,11 @@
                         android:id="@+id/imageView42"
                         android:layout_width="180dp"
                         android:layout_height="240dp"
-                        android:src="@tools:sample/avatars" />
+                        app:srcCompat="@drawable/kingsman" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cimp"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent">
 
@@ -116,7 +110,7 @@
                         android:id="@+id/imageView43"
                         android:layout_width="180dp"
                         android:layout_height="240dp"
-                        android:src="@tools:sample/avatars" />
+                        app:srcCompat="@drawable/el_imperio" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
 
@@ -128,6 +122,7 @@
                 android:visibility="visible">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cdoc"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp">
@@ -136,10 +131,11 @@
                         android:id="@+id/imageView44"
                         android:layout_width="180dp"
                         android:layout_height="240dp"
-                        android:src="@tools:sample/avatars" />
+                        app:srcCompat="@drawable/doctor_strange" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cas"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent">
 
@@ -147,7 +143,7 @@
                         android:id="@+id/imageView45"
                         android:layout_width="180dp"
                         android:layout_height="240dp"
-                        android:src="@tools:sample/avatars" />
+                        app:srcCompat="@drawable/los_asesinatos" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
 
@@ -178,7 +174,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:scaleType="centerCrop"
-                            android:src="@tools:sample/avatars"
                             app:srcCompat="@drawable/baymax" />
                     </androidx.cardview.widget.CardView>
 
@@ -197,7 +192,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:scaleType="centerCrop"
-                            android:src="@tools:sample/avatars"
                             app:srcCompat="@drawable/mandalorian" />
                     </androidx.cardview.widget.CardView>
 
@@ -216,7 +210,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:scaleType="centerCrop"
-                            android:src="@tools:sample/avatars"
                             app:srcCompat="@drawable/percy_jackson" />
                     </androidx.cardview.widget.CardView>
 
@@ -235,7 +228,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:scaleType="centerCrop"
-                            android:src="@tools:sample/avatars"
                             app:srcCompat="@drawable/los_asesinatos" />
                     </androidx.cardview.widget.CardView>
 
@@ -254,7 +246,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:scaleType="centerCrop"
-                            android:src="@tools:sample/avatars"
                             app:srcCompat="@drawable/scale" />
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
@@ -287,7 +278,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:scaleType="centerCrop"
-                            android:src="@tools:sample/avatars"
                             app:srcCompat="@drawable/cars" />
                     </androidx.cardview.widget.CardView>
 
@@ -306,7 +296,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:scaleType="centerCrop"
-                            android:src="@tools:sample/avatars"
                             app:srcCompat="@drawable/cruella" />
                     </androidx.cardview.widget.CardView>
 
@@ -325,7 +314,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:scaleType="centerCrop"
-                            android:src="@tools:sample/avatars"
                             app:srcCompat="@drawable/doctor_strange" />
                     </androidx.cardview.widget.CardView>
 
@@ -344,7 +332,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:scaleType="centerCrop"
-                            android:src="@tools:sample/avatars"
                             app:srcCompat="@drawable/el_retorno_de_las_brujas" />
                     </androidx.cardview.widget.CardView>
 
@@ -363,7 +350,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:scaleType="centerCrop"
-                            android:src="@tools:sample/avatars"
                             app:srcCompat="@drawable/el_imperio" />
                     </androidx.cardview.widget.CardView>
 
@@ -382,7 +368,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:scaleType="centerCrop"
-                            android:src="@tools:sample/avatars"
                             app:srcCompat="@drawable/posterstarwarsunanuevaesperanza" />
                     </androidx.cardview.widget.CardView>
 
@@ -401,7 +386,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:scaleType="centerCrop"
-                            android:src="@tools:sample/avatars"
                             app:srcCompat="@drawable/pompeya" />
                     </androidx.cardview.widget.CardView>
 
@@ -420,7 +404,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:scaleType="centerCrop"
-                            android:src="@tools:sample/avatars"
                             app:srcCompat="@drawable/thecreator" />
                     </androidx.cardview.widget.CardView>
 
@@ -439,7 +422,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:scaleType="centerCrop"
-                            android:src="@tools:sample/avatars"
                             app:srcCompat="@drawable/up" />
                     </androidx.cardview.widget.CardView>
 
@@ -458,7 +440,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:scaleType="centerCrop"
-                            android:src="@tools:sample/avatars"
                             app:srcCompat="@drawable/kingsman" />
                     </androidx.cardview.widget.CardView>
 
@@ -477,7 +458,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:scaleType="centerCrop"
-                            android:src="@tools:sample/avatars"
                             app:srcCompat="@drawable/increibles" />
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
@@ -512,7 +492,8 @@
                 android:layout_height="70dp"
                 android:layout_weight="1"
                 android:background="#191b28"
-                android:src="@android:drawable/btn_star" />
+                android:scaleType="centerInside"
+                android:src="@drawable/mickey" />
         </LinearLayout>
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>

@@ -16,16 +16,88 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="20dp"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="visible">
 
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#00FFFFFF"
-            android:src="@drawable/ic_launcher_background" />
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="selectImage"
+            app:srcCompat="@drawable/darth" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="selectImage"
+            app:srcCompat="@drawable/homer" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="selectImage"
+            app:srcCompat="@drawable/mickey" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:onClick="selectImage"
+            app:srcCompat="@drawable/msi" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:onClick="selectImage"
+        app:srcCompat="@drawable/darth" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:onClick="selectImage"
+        app:srcCompat="@drawable/homer" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:onClick="selectImage"
+        app:srcCompat="@drawable/mickey" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:onClick="selectImage"
+        app:srcCompat="@drawable/msi" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView"
@@ -94,6 +166,7 @@
                 android:background="#31333f"
                 android:hint="Contraseña"
                 android:inputType="text"
+                android:minHeight="48dp"
                 android:textColorHint="@color/white" />
         </com.google.android.material.textfield.TextInputLayout>
 

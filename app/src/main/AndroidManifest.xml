@@ -15,9 +15,6 @@
         android:theme="@style/Theme.Diney"
         tools:targetApi="31">
         <activity
-            android:name=".FiltroWal"
-            android:exported="false" />
-        <activity
             android:name=".SoloAsesinatos"
             android:exported="false" />
         <activity
@@ -37,9 +34,6 @@
             android:exported="false" />
         <activity
             android:name=".NuevaEsperanza"
-            android:exported="false" />
-        <activity
-            android:name=".UltimaEsperanza"
             android:exported="false" />
         <activity
             android:name=".Shield"
@@ -67,27 +61,6 @@
             android:exported="false" />
         <activity
             android:name=".DoctorStrange"
-            android:exported="false" />
-        <activity
-            android:name=".FiltroStars"
-            android:exported="false" />
-        <activity
-            android:name=".FiltroNationalGeographic"
-            android:exported="false" />
-        <activity
-            android:name=".FiltroStarWars"
-            android:exported="false" />
-        <activity
-            android:name=".FiltroMarvel"
-            android:exported="false" />
-        <activity
-            android:name=".FiltroPixar"
-            android:exported="false" />
-        <activity
-            android:name=".FiltroDisney"
-            android:exported="false" />
-        <activity
-            android:name=".Descargas"
             android:exported="false" />
         <activity
             android:name=".Buscador"

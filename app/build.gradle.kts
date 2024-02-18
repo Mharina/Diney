@@ -50,7 +50,10 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     //opcional circulo indicador
     implementation("me.relex:circleindicator:2.1.6")
-    //carrusel
+    // Material Components for Android. Replace the version with the latest version of Material Components library.
+    implementation ("com.google.android.material:material:1.5.0")
+    // Circle Indicator (To fix the xml preview "Missing classes" error)
+    implementation ("me.relex:circleindicator:2.1.6")
     implementation ("org.imaginativeworld.whynotimagecarousel:whynotimagecarousel:2.1.0")
     //firebase
     implementation(platform("com.google.firebase:firebase-bom:32.7.1"))

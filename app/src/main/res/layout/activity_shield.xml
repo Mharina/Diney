@@ -1,9 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1a1c29"
+    android:orientation="vertical"
     tools:context=".Shield">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/_94686_agents_shield_temporada_3_final_infarto_posibles_tramas_futuras" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/agents_of_s_h_i_e_l_d____logo_definitivo_transformed" />
+
+    <Button
+        android:id="@+id/button33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:text="PLAY"
+        android:textColor="@color/black"
+        app:cornerRadius="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="El agente de S.H.I.E.L.D., Phil Coulson mientras reúne a un pequeño equipo de agentes para manejar extraños casos nuevos.​ Ellos investigan el Proyecto Ciempiés y su líder, &quot;El Clarividente&quot;, finalmente descubriendo que la organización está respaldada por el grupo terrorista Hydra, que se ha infiltrado en S.H.I.E.L.D. "
+        android:textColor="@color/white" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="132dp"
+        android:background="#191b28">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton32"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="#191b28"
+                android:scaleType="centerInside"
+                android:src="@drawable/house_home_building_icon_148241" />
+
+            <ImageButton
+                android:id="@+id/imageButton33"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="50dp"
+                android:layout_weight="1"
+                android:background="#191b28"
+                android:scaleType="centerInside"
+                android:src="@drawable/lupa_1_" />
+        </LinearLayout>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</LinearLayout>

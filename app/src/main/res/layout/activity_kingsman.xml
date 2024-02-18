@@ -1,9 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1a1c29"
+    android:orientation="vertical"
     tools:context=".Kingsman">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/scalek" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/y4phzdq_transformed" />
+
+    <Button
+        android:id="@+id/button24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:text="PLAY"
+        android:textColor="@color/black"
+        app:cornerRadius="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Cuando un agente secreto de Kingsman muere, su puesto es ocupado por otra persona. El resto de miembros debe proponer a un candidato, entre los cuales resultará elegido uno de ellos. En esta ocasión, el agente Galahad (Colin Firth) propone al hijo de un antiguo compañero: Eggsy (Taron Egerton). Mientras, el millonario Valentine (Samuel L. Jackson) tiene en mente un plan que pondría en riesgo a la mayor parte del planeta y los Kingsman deberán averiguar qué es y cómo evitarlo."
+        android:textColor="@color/white" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="83dp"
+        android:background="#191b28">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton20"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="#191b28"
+                android:scaleType="centerInside"
+                android:src="@drawable/house_home_building_icon_148241" />
+
+            <ImageButton
+                android:id="@+id/imageButton21"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="50dp"
+                android:layout_weight="1"
+                android:background="#191b28"
+                android:scaleType="centerInside"
+                android:src="@drawable/lupa_1_" />
+        </LinearLayout>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</LinearLayout>

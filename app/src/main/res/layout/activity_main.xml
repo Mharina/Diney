@@ -22,6 +22,7 @@
             android:layout_height="wrap_content"
             android:drawablePadding="10dp"
             android:hint="Usuario"
+            android:minHeight="48dp"
             android:textColorHint="@color/white" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -42,7 +43,9 @@
             android:drawablePadding="10dp"
             android:hint="Contraseña"
             android:importantForAutofill="no"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColorHint="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

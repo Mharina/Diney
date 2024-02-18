@@ -1,16 +1,24 @@
 package com.example.diney
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
+import android.widget.ImageView
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuthEmailException
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
+import com.google.firebase.auth.FirebaseAuthInvalidUserException
 import com.google.firebase.auth.auth
 
 class MainActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -18,30 +26,31 @@ class MainActivity : AppCompatActivity() {
         val botonR: Button = findViewById(R.id.regis)
         val user:EditText = findViewById(R.id.usuario)
         val pass:EditText = findViewById(R.id.password)
+
         val auth: FirebaseAuth = Firebase.auth
+
+        val selectedImage = intent.getIntExtra("selectedImage", 0)
         val usuario = intent.getStringExtra("usuario")
-        val passw = intent.getStringExtra("password")
-        val mail = intent.getStringExtra("email")
-        val foto = intent.getStringExtra("imagen_id")
 
         botonI.setOnClickListener{
             if (user.text.isNotEmpty() && pass.text.isNotEmpty()){
                 auth.signInWithEmailAndPassword(user.text.toString(), pass.text.toString()).addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         val intent = Intent(this@MainActivity, Buscador::class.java)
-                        intent.putExtra("imagen_id", foto)
-                        intent.putExtra("email", mail)
+//                        intent.putExtra("imagen_id", 0)
+                        intent.putExtra("email", user.text.toString())
+                        intent.putExtra("selectedImage", selectedImage)
                         intent.putExtra("usuario", usuario)
-                        intent.putExtra("contraseña", passw)
+                        intent.putExtra("contraseña", pass.text.toString())
                         startActivity(intent)
-
                     } else {
-                        val builder = AlertDialog.Builder(this)
-                        builder.setTitle("Error")
-                        builder.setMessage("Se ha producido un error en la autenticacion del ususario")
-                        builder.setPositiveButton("Aceptar",null)
-                        val dialog: AlertDialog = builder.create()
-                        dialog.show()
+                        val error = when (task.exception) {
+                            is FirebaseAuthInvalidUserException -> "El usuario no existe."
+                            is FirebaseAuthEmailException -> "El correo no es valido"
+                            is FirebaseAuthInvalidCredentialsException -> "La contraseña es incorrecta."
+                            else -> "Error al autenticar"
+                        }
+                        Toast.makeText(this@MainActivity, error, Toast.LENGTH_SHORT).show()
                     }
                 }
             }else{
@@ -52,8 +61,6 @@ class MainActivity : AppCompatActivity() {
                 val dialog: AlertDialog = builder.create()
                 dialog.show()
             }
-//            val intent = Intent(this@MainActivity, MenuPrincipal::class.java)
-//            startActivity(intent)
         }
         botonR.setOnClickListener{
             val intent = Intent(this@MainActivity, CrearUsuario::class.java)
