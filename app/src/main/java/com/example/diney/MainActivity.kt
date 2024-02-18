@@ -37,7 +37,6 @@ class MainActivity : AppCompatActivity() {
                 auth.signInWithEmailAndPassword(user.text.toString(), pass.text.toString()).addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         val intent = Intent(this@MainActivity, Buscador::class.java)
-//                        intent.putExtra("imagen_id", 0)
                         intent.putExtra("email", user.text.toString())
                         intent.putExtra("selectedImage", selectedImage)
                         intent.putExtra("usuario", usuario)
