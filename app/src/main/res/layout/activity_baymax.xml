@@ -37,7 +37,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
-        android:text="La serie sigue al enfermero robot Baymax mientras ayuda a las personas en la ciudad de San Fransokyo."
+        android:text="Sigue al enfermero robot Baymax mientras ayuda a las personas en la ciudad de San Fransokyo."
         android:textColor="@color/white" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
