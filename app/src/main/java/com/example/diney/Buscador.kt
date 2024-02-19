@@ -57,6 +57,39 @@ class Buscador : AppCompatActivity() {
 
         perfil.setImageResource(selectedImage)
 
+        ck.setOnClickListener {
+            val intent=Intent(this@Buscador,Kingsman::class.java)
+            intent.putExtra("usuario", usuario)
+            intent.putExtra("selectedImage", selectedImage)
+            intent.putExtra("email", mail)
+            intent.putExtra("contraseña", passw)
+            startActivity(intent)
+        }
+        ci.setOnClickListener {
+            val intent=Intent(this@Buscador,ImperioContrataca::class.java)
+            intent.putExtra("usuario", usuario)
+            intent.putExtra("selectedImage", selectedImage)
+            intent.putExtra("email", mail)
+            intent.putExtra("contraseña", passw)
+            startActivity(intent)
+        }
+        cd.setOnClickListener {
+            val intent=Intent(this@Buscador,DoctorStrange::class.java)
+            intent.putExtra("usuario", usuario)
+            intent.putExtra("selectedImage", selectedImage)
+            intent.putExtra("email", mail)
+            intent.putExtra("contraseña", passw)
+            startActivity(intent)
+        }
+        ca.setOnClickListener {
+            val intent=Intent(this@Buscador,SoloAsesinatos::class.java)
+            intent.putExtra("usuario", usuario)
+            intent.putExtra("selectedImage", selectedImage)
+            intent.putExtra("email", mail)
+            intent.putExtra("contraseña", passw)
+            startActivity(intent)
+        }
+
         series.setOnClickListener {
             ck.visibility = View.GONE
             ci.visibility = View.GONE
