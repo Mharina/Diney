@@ -1,21 +1,16 @@
 package com.example.diney
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
-import android.widget.ImageButton
-import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthEmailException
-import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
-import com.google.firebase.auth.FirebaseAuthInvalidUserException
 import com.google.firebase.auth.auth
 
 class CrearUsuario : AppCompatActivity() {
@@ -31,11 +26,6 @@ class CrearUsuario : AppCompatActivity() {
         val botonS: Button = findViewById(R.id.suscrib)
         val botonV: Button = findViewById(R.id.volver)
         val auth: FirebaseAuth = Firebase.auth
-
-        val f1: ImageView = findViewById(R.id.imageView5)
-        val f2: ImageView = findViewById(R.id.imageView7)
-        val f3: ImageView = findViewById(R.id.imageView17)
-        val f4: ImageView = findViewById(R.id.imageView25)
 
         botonV.setOnClickListener{
             var intent = Intent(this@CrearUsuario, MainActivity::class.java)
