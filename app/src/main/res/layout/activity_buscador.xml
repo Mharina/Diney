@@ -477,8 +477,6 @@
         android:layout_height="70dp"
         android:layout_marginTop="5dp"
         android:background="#191b28">
-        <!--        android:layout_gravity="bottom"-->
-
 
         <LinearLayout
             android:layout_width="match_parent"
